@@ -52,7 +52,7 @@ fun ESGQuestionnaireScreen(modifier: Modifier = Modifier) {
                     )
                 }
                 Image(
-                    painter = painterResource(id = R.drawable.imag),
+                    painter = painterResource(id = R.drawable.profile_picture),
                     contentDescription = "User Profile",
                     modifier = Modifier
                         .size(46.dp)
