@@ -81,9 +81,9 @@ fun Login(modifier: Modifier = Modifier) {
                     color = MaterialTheme.colorScheme.tertiary
                 )
                 Text(
-                    text = " sua voz, nossa evolução_ ;-)",
+                    text = "sua voz, nossa evolução_ ;-)",
                     fontSize = 16.sp,
-                    color = MaterialTheme.colorScheme.tertiary
+                    color = Color.White
                 )
             }
             Column {
@@ -95,7 +95,7 @@ fun Login(modifier: Modifier = Modifier) {
                         .padding(bottom = 15.dp)
                 )
                 TextField(
-                    value = "Senha",
+                    value = "senha",
                     onValueChange = {},
                     modifier = Modifier.fillMaxWidth()
                 )

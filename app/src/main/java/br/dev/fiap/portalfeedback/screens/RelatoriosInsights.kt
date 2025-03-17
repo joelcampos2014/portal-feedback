@@ -323,7 +323,7 @@ fun FeedbackItem(number: Int, text: String, stars: Int, percentage: String) {
                 Spacer(modifier = Modifier.width(4.dp))
                 for (i in 1..stars) {
                     Image(
-                        painter = painterResource(id = R.drawable.estrela),
+                        painter = painterResource(id = R.drawable.estrelinha),
                         contentDescription = "Estrela",
                         modifier = Modifier.size(12.dp)
                     )
