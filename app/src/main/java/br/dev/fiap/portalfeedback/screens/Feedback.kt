@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.dev.fiap.portalfeedback.ui.theme.PortalFeedbackTheme
 import br.dev.fiap.portalfeedback.R
+import br.dev.fiap.portalfeedback.ui.theme.Green
 
 @Composable
 fun FeedbackScreen( modifier: Modifier = Modifier) {
@@ -41,7 +42,7 @@ fun FeedbackScreen( modifier: Modifier = Modifier) {
     ) {
         Text(
             text = "Portal Feedback",
-            color = MaterialTheme.colorScheme.tertiary,
+            color = Green,
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold
         )
@@ -50,7 +51,7 @@ fun FeedbackScreen( modifier: Modifier = Modifier) {
             text = " Sua opinião é essencial para nos!\n " +
                     "Compartilhe seu feedback e ajude-nos a melhorar ainda mais",
             modifier = Modifier.fillMaxWidth(),
-            color = MaterialTheme.colorScheme.tertiary,
+            color = Green,
             textAlign = TextAlign.Center,
             fontSize = 18.sp
 
@@ -95,7 +96,7 @@ fun FeedbackScreen( modifier: Modifier = Modifier) {
         ){
             Button(
                 onClick = { /* Lógica de envio */ },
-                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary),
+                colors = ButtonDefaults.buttonColors(containerColor = Green),
             ) {
                 Text(text = "Enviar meu feedback", color = Color.White)
             }
@@ -108,7 +109,7 @@ fun FeedbackScreen( modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun FeedbackScreenPriview() {
-    PortalFeedbackTheme (darkTheme = false){
+    PortalFeedbackTheme (darkTheme = true){
     FeedbackScreen()}
 
 }

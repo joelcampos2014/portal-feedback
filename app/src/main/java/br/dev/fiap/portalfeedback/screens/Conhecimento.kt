@@ -32,6 +32,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.dev.fiap.portalfeedback.R
+import br.dev.fiap.portalfeedback.ui.theme.Green
 import br.dev.fiap.portalfeedback.ui.theme.PortalFeedbackTheme
 
 @Composable
@@ -84,12 +85,12 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                 Text(
                     text = "Portal feedback",
                     fontSize = 32.sp,
-                    color = MaterialTheme.colorScheme.tertiary
+                    color = Green
                 )
                 Text(
                     text = "sua voz, nossa evolução_ ;-)",
                     fontSize = 16.sp,
-                    color = Color.White
+                    color = MaterialTheme.colorScheme.tertiary
                 )
 
                 Spacer(modifier = Modifier.height(20.dp))
@@ -115,7 +116,7 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                     text = "Alfredo Torres",
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = MaterialTheme.colorScheme.tertiary
                 )
 
                 Spacer(modifier = Modifier.height(30.dp))
@@ -125,7 +126,7 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                     text = "Vamos conhecer mais sobre ESG?",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = MaterialTheme.colorScheme.tertiary
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
@@ -133,7 +134,7 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                 Text(
                     text = "É a gestão sustentável de empresas baseada em três pilares: Ambiental, Social e Governança, focando em impacto e ética.",
                     fontSize = 14.sp,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.tertiary,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
 
@@ -144,7 +145,7 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                 Text(
                     text = "O conceito ESG surgiu em 2004, impulsionado pela ONU, para guiar investimentos sustentáveis com foco em meio ambiente, social e governança.",
                     fontSize = 14.sp,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.tertiary,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -154,7 +155,7 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                 Text(
                     text = "Agora que você já sabe mais sobre o tema, nos ajude a entender seu nível de conhecimento em relação ao tema ESG.",
                     fontSize = 14.sp,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.tertiary,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -165,9 +166,9 @@ fun Conhecimento (modifier: Modifier = Modifier) {
                         onClick = {},
                         colors = ButtonColors(
                             contentColor = Color.White,
-                            disabledContainerColor = MaterialTheme.colorScheme.tertiary,
-                            disabledContentColor = MaterialTheme.colorScheme.tertiary,
-                            containerColor = MaterialTheme.colorScheme.tertiary
+                            disabledContainerColor = Green,
+                            disabledContentColor = Green,
+                            containerColor = Green
                         ),
                         modifier = Modifier
                             .fillMaxWidth()

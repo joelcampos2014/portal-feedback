@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.sp
 import br.dev.fiap.portalfeedback.R
 import br.dev.fiap.portalfeedback.ui.theme.PortalFeedbackTheme
 import androidx.compose.ui.graphics.Brush
+import br.dev.fiap.portalfeedback.ui.theme.Green
 
 @Composable
 fun RelatoriosInsightsScreen() {
@@ -37,7 +38,7 @@ fun RelatoriosInsightsScreen() {
             Text(
                 text = "Portal feedback",
                 fontSize = 32.sp,
-                color = MaterialTheme.colorScheme.tertiary
+                color = Green
             )
             Text(
                 text = " sua voz, nossa evolução_ ;-)",
@@ -135,7 +136,7 @@ fun TrafegoSection() {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
-                .background(Color.White)
+                .background(MaterialTheme.colorScheme.tertiary)
                 .padding(horizontal = 10.dp, vertical = 2.dp)
         ) {
             Text("→", fontSize = 18.sp, color = Color.Black)
@@ -145,7 +146,7 @@ fun TrafegoSection() {
 
         Column(
             modifier = Modifier
-                .border(2.dp, Color.White)
+                .border(2.dp, MaterialTheme.colorScheme.tertiary)
                 .padding(8.dp)
         ) {
             Spacer(modifier = Modifier.height(12.dp))
@@ -160,8 +161,8 @@ fun TrafegoSection() {
                         contentDescription = "Upload",
                         modifier = Modifier.size(24.dp)
                     )
-                    Text("110 ADS", fontSize = 24.sp, color = Color.White)
-                    Text("publicados", fontSize = 9.sp, color = Color.White)
+                    Text("110 ADS", fontSize = 24.sp, color = MaterialTheme.colorScheme.tertiary)
+                    Text("publicados", fontSize = 9.sp, color = MaterialTheme.colorScheme.tertiary)
                 }
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Image(
@@ -169,8 +170,8 @@ fun TrafegoSection() {
                         contentDescription = "Impressões",
                         modifier = Modifier.size(24.dp)
                     )
-                    Text("370k", fontSize = 24.sp, color = Color.White)
-                    Text("impressões", fontSize = 9.sp, color = Color.White)
+                    Text("370k", fontSize = 24.sp, color = MaterialTheme.colorScheme.tertiary)
+                    Text("impressões", fontSize = 9.sp, color = MaterialTheme.colorScheme.tertiary)
                 }
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Image(
@@ -178,8 +179,8 @@ fun TrafegoSection() {
                         contentDescription = "Valor investido",
                         modifier = Modifier.size(24.dp)
                     )
-                    Text("$2.5k", fontSize = 24.sp, color = Color.White)
-                    Text("investidos", fontSize = 9.sp, color = Color.White)
+                    Text("$2.5k", fontSize = 24.sp, color = MaterialTheme.colorScheme.tertiary)
+                    Text("investidos", fontSize = 9.sp, color = MaterialTheme.colorScheme.tertiary)
                 }
             }
         }
@@ -209,7 +210,7 @@ fun EngajamentoLikesComentariosSection() {
                     color = Color(0xFF00FF94),
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text("37% Engajamento", fontSize = 10.sp, color = Color.White)
+                Text("37% Engajamento", fontSize = 10.sp, color = MaterialTheme.colorScheme.tertiary)
             }
             Row(
                 verticalAlignment = Alignment.CenterVertically
@@ -220,7 +221,7 @@ fun EngajamentoLikesComentariosSection() {
                     color = Color(0xFF00ffff),
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text("60% Likes", fontSize = 10.sp, color = Color.White)
+                Text("60% Likes", fontSize = 10.sp, color = MaterialTheme.colorScheme.tertiary)
             }
             Row(
                 verticalAlignment = Alignment.CenterVertically
@@ -231,7 +232,7 @@ fun EngajamentoLikesComentariosSection() {
                     color = Color(0xFFffff00),
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text("49% Comentários", fontSize = 10.sp, color = Color.White)
+                Text("49% Comentários", fontSize = 10.sp, color = MaterialTheme.colorScheme.tertiary)
             }
         }
 
@@ -317,7 +318,7 @@ fun FeedbackItem(number: Int, text: String, stars: Int, percentage: String) {
             Text(
                 text = text,
                 fontSize = 10.sp,
-                color = Color.White
+                color = MaterialTheme.colorScheme.tertiary
             )
             if (stars > 0) {
                 Spacer(modifier = Modifier.width(4.dp))
