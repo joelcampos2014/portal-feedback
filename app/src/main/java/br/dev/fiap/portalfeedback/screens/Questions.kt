@@ -10,6 +10,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -17,6 +18,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.dev.fiap.portalfeedback.ui.theme.PortalFeedbackTheme
 import br.dev.fiap.portalfeedback.R
+import br.dev.fiap.portalfeedback.ui.theme.DarkGray
+import br.dev.fiap.portalfeedback.ui.theme.Green
 
 @Composable
 fun ESGQuestionnaireScreen(modifier: Modifier = Modifier) {
@@ -43,12 +46,12 @@ fun ESGQuestionnaireScreen(modifier: Modifier = Modifier) {
                     Text(
                         text = "Bem-vindo novamente",
                         fontSize = 16.sp,
-                        color = MaterialTheme.colorScheme.tertiary
+                        color = Green
                     )
                     Text(
                         text = "Alfredo Torres",
                         fontSize = 20.sp,
-                        color = MaterialTheme.colorScheme.tertiary
+                        color = Green
                     )
                 }
                 Image(
@@ -57,6 +60,7 @@ fun ESGQuestionnaireScreen(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .size(46.dp)
                         .border(2.dp, MaterialTheme.colorScheme.secondary, CircleShape)
+                        .clip(CircleShape)
                 )
             }
 
@@ -97,17 +101,17 @@ fun ESGQuestionnaireScreen(modifier: Modifier = Modifier) {
                         Text(
                             text = question,
                             fontSize = 18.sp,
-                            color = MaterialTheme.colorScheme.tertiary
+                            color = Green
                         )
                         Spacer(modifier = Modifier.height(6.dp))
                         options.forEach { option ->
-                            Text(text = option, color = MaterialTheme.colorScheme.primary)
+                            Text(text = option, color = DarkGray)
                         }
                         Spacer(modifier = Modifier.height(6.dp))
                         Button(
                             onClick = {},
                             modifier = Modifier.fillMaxWidth(),
-                            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary)
+                            colors = ButtonDefaults.buttonColors(containerColor = Green)
                         ) {
                             Text(text = "Enviar")
                         }
